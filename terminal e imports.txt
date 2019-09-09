@@ -1,0 +1,23 @@
+Como instalar o Bootstrap 4 com NPM e Sass
+1. De cd ate a pasta
+2. npm init
+3. npm install jquery
+4. npm install popper.js
+5. npm install bootstrap@4.0.0-beta.2 (varia de versao para versao)
+6. npm install -g node-sass
+7. No package.json, adicionar uma , depois do test e a linha:
+"scss": "node-sass --watch node_modules/bootstrap/scss -o node_modules/bootstrap/compiler"
+8. No terminal (rodar essa linha para reabrir o sass):
+npm run scss
+9.Alterar e voltar alguma coisa em algum arquivo scss 
+10. Criar um style.scss, adicionar algo, salvar e remover
+-----------------------===================--------------
+
+<!---link do bootstrap-->
+<link rel="stylesheet" href="node_modules\bootstrap\compiler\bootstrap.css">
+
+<!-- jquery, popper.js e bootstrap-->
+<script src="node_modules\jquery\dist\jquery.js"></script>
+<script src="node_modules\popper.js\dist\umd\popper.js"></script>
+<script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+
