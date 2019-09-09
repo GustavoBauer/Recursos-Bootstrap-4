@@ -9,6 +9,8 @@
 	<!---link do bootstrap-->
 	<link rel="stylesheet" href="node_modules\bootstrap\compiler\bootstrap.css">
 	<link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+	<!--Font-awesome-->
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
 </head>
 
 <body>
@@ -105,7 +107,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 text-center my-5">
-				<h1 class="display-3">Lorem ipsum</h1>
+				<h1 class="display-3"><i class="fa fa-cogs text-primary" aria-hidden="true"></i> Lorem ipsum</h1>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nam quaerat ut laudantium ab </p>
 			</div>
 		</div>
@@ -240,7 +242,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 text-center">
-					<h1 class="display-4">Natus pariatur omnis</h1>
+					<h1 class="display-4"><i class="fa fa-video-camera text-primary" aria-hidden="true"></i> Natus
+						pariatur omnis</h1>
 					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quae numquam,
 						corporis, reprehenderit illo nisi ad consequatur est dolor quo accusamus sequi voluptatum
 						ducimus. Placeat illum facilis enim temporibus vero.</p>
@@ -250,13 +253,13 @@
 			<div class="row">
 				<div class="col-12">
 					<ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
-						<li nav-item>
+						<li class="nav-item">
 							<a class="nav-link active" id="nav-01" data-toggle="pill" href="#nav-item01">Item 1</a>
 						</li>
-						<li nav-item>
+						<li class="nav-item">
 							<a class="nav-link" id="nav-02" data-toggle="pill" href="#nav-item02">Item 2</a>
 						</li>
-						<li nav-item>
+						<li class="nav-item">
 							<a class="nav-link" id="nav-03" data-toggle="pill" href="#nav-item03">Item 3</a>
 						</li>
 					</ul>
@@ -320,6 +323,74 @@
 		</div>
 	</div>
 
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center my-5">
+				<h1 class="display-4"> <i class="fa fa-paper-plane text-primary" aria-hidden="true"></i> Lorem ipsum
+				</h1>
+			</div>
+		</div>
+
+		<div class="row justify-content-center mb-5">
+			<div class="col-sm-12 col-md-10 col-lg-8">
+				<form>
+					<div class="form-row">
+						<div class="form-group col-sm-6">
+							<label for="inputNome">Seu nome</label>
+							<input type="text" class="form-control" id="inputNome" placeholder="Nome">
+						</div>
+						<div class="form-group col-sm-6">
+							<label for="inputSobrenome">Seu sobrenome</label>
+							<input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-sm-12">
+							<label for="inputEndereco">Seu endereço</label>
+							<input type="text" class="form-control" id="inputEndereco" placeholder="Endereço completo">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-sm-6">
+							<label for="inputCidade">Sua cidade</label>
+							<input type="text" class="form-control" id="inputCidade" placeholder="Nome da cidade">
+						</div>
+						<div class="form-group col-sm-4">
+							<label for="inputEstado">Seu estado</label>
+							<select id="inputEstado" class="form-control">
+								<option selected>Escolha...</option>
+								<option>....</option>
+								<option>....</option>
+								<option>....</option>
+								<option>....</option>
+							</select>
+						</div>
+						<div class="form-group col-sm-2">
+							<label for="inputCEP">CEP</label>
+							<input type="text" class="form-control" id="inputCEP" placeholder="CEP">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-sm-12">
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox"> Desejo receber atualizações por
+									email
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-sm-12">
+							<button type="submit" class="btn btn-primary">Enviar</button>
+							<a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right" data-trigger="focus" title="Maecenas felis massa" data-content="lorem ipsum massa maecenas felis">Ajuda</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
 	<!--Modal-->
 	<div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-lg" role="document">
@@ -362,6 +433,13 @@
 	<script src="node_modules\jquery\dist\jquery.js"></script>
 	<script src="node_modules\popper.js\dist\umd\popper.js"></script>
 	<script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+
+	<script>
+		$(function (){
+			$('[data-toggle="popover"]').popover()
+		})
+		</script>
+
 </body>
 
 </html>
